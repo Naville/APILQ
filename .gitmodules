@@ -1,0 +1,6 @@
+[submodule "MMMarkdown"]
+	path = MMMarkdown
+	url = https://github.com/mdiep/MMMarkdown.git
+[submodule "MachO-Kit"]
+	path = MachO-Kit
+	url = https://github.com/DeVaukz/MachO-Kit.git

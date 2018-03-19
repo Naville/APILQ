@@ -12,7 +12,98 @@
 		FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */; };
 		FA63D377205F9903003A91FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA63D376205F9903003A91FA /* main.c */; };
 		FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63D37F205F9A3A003A91FA /* libz.tbd */; };
+		FAB62F6D205FBD7A00E0CE3E /* .framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* .framework */; };
+		FAB62F6E205FBD7D00E0CE3E /* MMMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */; };
+		FAB62F70205FBD8900E0CE3E /* .framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* .framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAB62F71205FBD9B00E0CE3E /* MMMarkdown.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB62F43205FBCC400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED7620F1B37810000687B36;
+			remoteInfo = "MMMarkdown (iOS)";
+		};
+		FAB62F45205FBCC400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED761571B374D6700687B36;
+			remoteInfo = "MMMarkdown (OS X)";
+		};
+		FAB62F47205FBCC400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE23E8F41C0CF3EF0087F587;
+			remoteInfo = "MMMarkdown (tvOS)";
+		};
+		FAB62F49205FBCC400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE23E9131C0CF77D0087F587;
+			remoteInfo = "MMMarkdown (watchOS)";
+		};
+		FAB62F4B205FBCC400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BED761611B374D6700687B36;
+			remoteInfo = MMMarkdownTests;
+		};
+		FAB62F63205FBCEC00E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D02FEB361890FF88004E88ED;
+			remoteInfo = MachOKit;
+		};
+		FAB62F65205FBCEC00E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D02FEB4D1890FF88004E88ED;
+			remoteInfo = MachOKitTests;
+		};
+		FAB62F67205FBCEC00E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0A3BB741A68EB9D00D663A0;
+			remoteInfo = libMachO;
+		};
+		FAB62F69205FBCF100E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D02FEB351890FF88004E88ED;
+			remoteInfo = MachOKit;
+		};
+		FAB62F6B205FBCF400E0CE3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BED761561B374D6700687B36;
+			remoteInfo = "MMMarkdown (OS X)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAB62F6F205FBD8200E0CE3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAB62F70205FBD8900E0CE3E /* .framework in CopyFiles */,
+				FAB62F71205FBD9B00E0CE3E /* MMMarkdown.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLIPA.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA.release.xcconfig"; sourceTree = "<group>"; };
@@ -24,6 +115,8 @@
 		FA63D376205F9903003A91FA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FA63D378205F9903003A91FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA63D37F205F9A3A003A91FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMMarkdown.xcodeproj; path = MMMarkdown/MMMarkdown.xcodeproj; sourceTree = "<group>"; };
+		FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MachOKit.xcodeproj; path = "MachO-Kit/MachOKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB62F6E205FBD7D00E0CE3E /* MMMarkdown.framework in Frameworks */,
+				FAB62F6D205FBD7A00E0CE3E /* .framework in Frameworks */,
 				FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */,
 				938D808101C1DD52051C2337 /* libPods-QLIPA.a in Frameworks */,
 			);
@@ -51,6 +146,8 @@
 		FA63D365205F9903003A91FA = {
 			isa = PBXGroup;
 			children = (
+				FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */,
+				FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */,
 				FA63D371205F9903003A91FA /* QLIPA */,
 				FA63D370205F9903003A91FA /* Products */,
 				FA63D37E205F9A3A003A91FA /* Frameworks */,
@@ -86,6 +183,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAB62F3C205FBCC400E0CE3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB62F44205FBCC400E0CE3E /* MMMarkdown.framework */,
+				FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */,
+				FAB62F48205FBCC400E0CE3E /* MMMarkdown.framework */,
+				FAB62F4A205FBCC400E0CE3E /* MMMarkdown.framework */,
+				FAB62F4C205FBCC400E0CE3E /* MMMarkdownTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB62F5C205FBCEB00E0CE3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB62F64205FBCEC00E0CE3E /* .framework */,
+				FAB62F66205FBCEC00E0CE3E /* MachOKitTests.xctest */,
+				FAB62F68205FBCEC00E0CE3E /* libMachO.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,10 +228,13 @@
 				FA63D36C205F9903003A91FA /* Headers */,
 				FA63D36D205F9903003A91FA /* Resources */,
 				6A1E6019ADF447C7302AA724 /* [CP] Copy Pods Resources */,
+				FAB62F6F205FBD8200E0CE3E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAB62F6C205FBCF400E0CE3E /* PBXTargetDependency */,
+				FAB62F6A205FBCF100E0CE3E /* PBXTargetDependency */,
 			);
 			name = QLIPA;
 			productName = QLIPA;
@@ -144,12 +266,81 @@
 			mainGroup = FA63D365205F9903003A91FA;
 			productRefGroup = FA63D370205F9903003A91FA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FAB62F5C205FBCEB00E0CE3E /* Products */;
+					ProjectRef = FAB62F5B205FBCEB00E0CE3E /* MachOKit.xcodeproj */;
+				},
+				{
+					ProductGroup = FAB62F3C205FBCC400E0CE3E /* Products */;
+					ProjectRef = FAB62F3B205FBCC400E0CE3E /* MMMarkdown.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA63D36E205F9903003A91FA /* QLIPA */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FAB62F44205FBCC400E0CE3E /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = FAB62F43205FBCC400E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = FAB62F45205FBCC400E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F48205FBCC400E0CE3E /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = FAB62F47205FBCC400E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F4A205FBCC400E0CE3E /* MMMarkdown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMMarkdown.framework;
+			remoteRef = FAB62F49205FBCC400E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F4C205FBCC400E0CE3E /* MMMarkdownTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MMMarkdownTests.xctest;
+			remoteRef = FAB62F4B205FBCC400E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F64205FBCEC00E0CE3E /* .framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = .framework;
+			remoteRef = FAB62F63205FBCEC00E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F66205FBCEC00E0CE3E /* MachOKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MachOKitTests.xctest;
+			remoteRef = FAB62F65205FBCEC00E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAB62F68205FBCEC00E0CE3E /* libMachO.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMachO.a;
+			remoteRef = FAB62F67205FBCEC00E0CE3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FA63D36D205F9903003A91FA /* Resources */ = {
@@ -209,6 +400,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB62F6A205FBCF100E0CE3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MachOKit;
+			targetProxy = FAB62F69205FBCF100E0CE3E /* PBXContainerItemProxy */;
+		};
+		FAB62F6C205FBCF400E0CE3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MMMarkdown (OS X)";
+			targetProxy = FAB62F6B205FBCF400E0CE3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FA63D379205F9903003A91FA /* Debug */ = {
@@ -318,11 +522,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A876310910EAE8F7CB94D7F0 /* Pods-QLIPA.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/objective-zip\"",
+				);
 				INFOPLIST_FILE = QLIPA/Info.plist;
 				INSTALL_PATH = "~/Library/QuickLook/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
@@ -335,11 +545,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/objective-zip\"",
+				);
 				INFOPLIST_FILE = QLIPA/Info.plist;
 				INSTALL_PATH = "~/Library/QuickLook/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
