@@ -6,5 +6,5 @@ target 'QLIPA' do
   # use_frameworks!
 
   # Pods for QLIPA
-  pod 'objective-zip', '~> 1.0'
+  pod 'objective-zip', '<= 1.0.3'
 end

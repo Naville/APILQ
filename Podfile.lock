@@ -1,12 +1,12 @@
 PODS:
-  - objective-zip (1.0.5)
+  - objective-zip (1.0.3)
 
 DEPENDENCIES:
-  - objective-zip (~> 1.0)
+  - objective-zip (<= 1.0.3)
 
 SPEC CHECKSUMS:
-  objective-zip: 41b1408cebffceb6b9d15ad691506707e390d359
+  objective-zip: 2f4eba2ed4a06ed74c7e6e4e7b80e6cacf212217
 
-PODFILE CHECKSUM: be01541956a630cd35dc8383c28831ecf7c97ca2
+PODFILE CHECKSUM: bac6fe94c61f5a78ad5145395910493522f96f64
 
 COCOAPODS: 1.4.0

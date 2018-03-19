@@ -12,9 +12,9 @@
 		FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */; };
 		FA63D377205F9903003A91FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA63D376205F9903003A91FA /* main.c */; };
 		FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63D37F205F9A3A003A91FA /* libz.tbd */; };
-		FAB62F6D205FBD7A00E0CE3E /* .framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* .framework */; };
+		FAB62F6D205FBD7A00E0CE3E /* MachOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* MachOKit.framework */; };
 		FAB62F6E205FBD7D00E0CE3E /* MMMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */; };
-		FAB62F70205FBD8900E0CE3E /* .framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* .framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAB62F70205FBD8900E0CE3E /* MachOKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAB62F64205FBCEC00E0CE3E /* MachOKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAB62F71205FBD9B00E0CE3E /* MMMarkdown.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAB62F46205FBCC400E0CE3E /* MMMarkdown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -98,7 +98,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FAB62F70205FBD8900E0CE3E /* .framework in CopyFiles */,
+				FAB62F70205FBD8900E0CE3E /* MachOKit.framework in CopyFiles */,
 				FAB62F71205FBD9B00E0CE3E /* MMMarkdown.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB62F6E205FBD7D00E0CE3E /* MMMarkdown.framework in Frameworks */,
-				FAB62F6D205FBD7A00E0CE3E /* .framework in Frameworks */,
+				FAB62F6D205FBD7A00E0CE3E /* MachOKit.framework in Frameworks */,
 				FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */,
 				938D808101C1DD52051C2337 /* libPods-QLIPA.a in Frameworks */,
 			);
@@ -198,7 +198,7 @@
 		FAB62F5C205FBCEB00E0CE3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAB62F64205FBCEC00E0CE3E /* .framework */,
+				FAB62F64205FBCEC00E0CE3E /* MachOKit.framework */,
 				FAB62F66205FBCEC00E0CE3E /* MachOKitTests.xctest */,
 				FAB62F68205FBCEC00E0CE3E /* libMachO.a */,
 			);
@@ -319,10 +319,10 @@
 			remoteRef = FAB62F4B205FBCC400E0CE3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FAB62F64205FBCEC00E0CE3E /* .framework */ = {
+		FAB62F64205FBCEC00E0CE3E /* MachOKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = .framework;
+			path = MachOKit.framework;
 			remoteRef = FAB62F63205FBCEC00E0CE3E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -535,6 +535,7 @@
 				);
 				INFOPLIST_FILE = QLIPA/Info.plist;
 				INSTALL_PATH = "~/Library/QuickLook/";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -558,6 +559,7 @@
 				);
 				INFOPLIST_FILE = QLIPA/Info.plist;
 				INSTALL_PATH = "~/Library/QuickLook/";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
