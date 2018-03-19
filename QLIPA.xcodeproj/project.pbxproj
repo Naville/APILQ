@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		938D808101C1DD52051C2337 /* libPods-QLIPA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4571F713AD7DC9549EC826D /* libPods-QLIPA.a */; };
+		FA63D373205F9903003A91FA /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */; };
+		FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */; };
+		FA63D377205F9903003A91FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA63D376205F9903003A91FA /* main.c */; };
+		FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA63D37F205F9A3A003A91FA /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLIPA.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA.release.xcconfig"; sourceTree = "<group>"; };
+		A876310910EAE8F7CB94D7F0 /* Pods-QLIPA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLIPA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA.debug.xcconfig"; sourceTree = "<group>"; };
+		D4571F713AD7DC9549EC826D /* libPods-QLIPA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLIPA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63D36F205F9903003A91FA /* QLIPA.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLIPA.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		FA63D376205F9903003A91FA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FA63D378205F9903003A91FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA63D37F205F9A3A003A91FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA63D36B205F9903003A91FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63D380205F9A3A003A91FA /* libz.tbd in Frameworks */,
+				938D808101C1DD52051C2337 /* libPods-QLIPA.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE6CF04DDEEB750BA8E47EEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A876310910EAE8F7CB94D7F0 /* Pods-QLIPA.debug.xcconfig */,
+				475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA63D365205F9903003A91FA = {
+			isa = PBXGroup;
+			children = (
+				FA63D371205F9903003A91FA /* QLIPA */,
+				FA63D370205F9903003A91FA /* Products */,
+				FA63D37E205F9A3A003A91FA /* Frameworks */,
+				BE6CF04DDEEB750BA8E47EEA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FA63D370205F9903003A91FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA63D36F205F9903003A91FA /* QLIPA.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA63D371205F9903003A91FA /* QLIPA */ = {
+			isa = PBXGroup;
+			children = (
+				FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */,
+				FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */,
+				FA63D376205F9903003A91FA /* main.c */,
+				FA63D378205F9903003A91FA /* Info.plist */,
+			);
+			path = QLIPA;
+			sourceTree = "<group>";
+		};
+		FA63D37E205F9A3A003A91FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA63D37F205F9A3A003A91FA /* libz.tbd */,
+				D4571F713AD7DC9549EC826D /* libPods-QLIPA.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA63D36C205F9903003A91FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA63D36E205F9903003A91FA /* QLIPA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA63D37B205F9903003A91FA /* Build configuration list for PBXNativeTarget "QLIPA" */;
+			buildPhases = (
+				6686B2B12E6A3F4737FD7218 /* [CP] Check Pods Manifest.lock */,
+				FA63D36A205F9903003A91FA /* Sources */,
+				FA63D36B205F9903003A91FA /* Frameworks */,
+				FA63D36C205F9903003A91FA /* Headers */,
+				FA63D36D205F9903003A91FA /* Resources */,
+				6A1E6019ADF447C7302AA724 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLIPA;
+			productName = QLIPA;
+			productReference = FA63D36F205F9903003A91FA /* QLIPA.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA63D366205F9903003A91FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Naville Zhang";
+				TargetAttributes = {
+					FA63D36E205F9903003A91FA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA63D369205F9903003A91FA /* Build configuration list for PBXProject "QLIPA" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA63D365205F9903003A91FA;
+			productRefGroup = FA63D370205F9903003A91FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA63D36E205F9903003A91FA /* QLIPA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA63D36D205F9903003A91FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6686B2B12E6A3F4737FD7218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QLIPA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1E6019ADF447C7302AA724 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA63D36A205F9903003A91FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA63D373205F9903003A91FA /* GenerateThumbnailForURL.m in Sources */,
+				FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */,
+				FA63D377205F9903003A91FA /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA63D379205F9903003A91FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA63D37A205F9903003A91FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA63D37C205F9903003A91FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A876310910EAE8F7CB94D7F0 /* Pods-QLIPA.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "";
+				INFOPLIST_FILE = QLIPA/Info.plist;
+				INSTALL_PATH = "~/Library/QuickLook/";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		FA63D37D205F9903003A91FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "";
+				INFOPLIST_FILE = QLIPA/Info.plist;
+				INSTALL_PATH = "~/Library/QuickLook/";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naville.qlipa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA63D369205F9903003A91FA /* Build configuration list for PBXProject "QLIPA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63D379205F9903003A91FA /* Debug */,
+				FA63D37A205F9903003A91FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA63D37B205F9903003A91FA /* Build configuration list for PBXNativeTarget "QLIPA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA63D37C205F9903003A91FA /* Debug */,
+				FA63D37D205F9903003A91FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA63D366205F9903003A91FA /* Project object */;
+}
