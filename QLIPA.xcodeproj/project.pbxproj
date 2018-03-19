@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		938D808101C1DD52051C2337 /* libPods-QLIPA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4571F713AD7DC9549EC826D /* libPods-QLIPA.a */; };
+		FA372CC0205FE717001B2C43 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = FA372CBE205FE717001B2C43 /* Utils.h */; };
+		FA372CC1205FE717001B2C43 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA372CBF205FE717001B2C43 /* Utils.m */; };
 		FA63D373205F9903003A91FA /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */; };
 		FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */; };
 		FA63D377205F9903003A91FA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA63D376205F9903003A91FA /* main.c */; };
@@ -109,6 +111,8 @@
 		475F4974F6598D13ECFEE81B /* Pods-QLIPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLIPA.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA.release.xcconfig"; sourceTree = "<group>"; };
 		A876310910EAE8F7CB94D7F0 /* Pods-QLIPA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLIPA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLIPA/Pods-QLIPA.debug.xcconfig"; sourceTree = "<group>"; };
 		D4571F713AD7DC9549EC826D /* libPods-QLIPA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLIPA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA372CBE205FE717001B2C43 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		FA372CBF205FE717001B2C43 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		FA63D36F205F9903003A91FA /* QLIPA.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLIPA.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				FA63D372205F9903003A91FA /* GenerateThumbnailForURL.m */,
 				FA63D374205F9903003A91FA /* GeneratePreviewForURL.m */,
 				FA63D376205F9903003A91FA /* main.c */,
+				FA372CBE205FE717001B2C43 /* Utils.h */,
+				FA372CBF205FE717001B2C43 /* Utils.m */,
 				FA63D378205F9903003A91FA /* Info.plist */,
 			);
 			path = QLIPA;
@@ -212,6 +218,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA372CC0205FE717001B2C43 /* Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +403,7 @@
 				FA63D373205F9903003A91FA /* GenerateThumbnailForURL.m in Sources */,
 				FA63D375205F9903003A91FA /* GeneratePreviewForURL.m in Sources */,
 				FA63D377205F9903003A91FA /* main.c in Sources */,
+				FA372CC1205FE717001B2C43 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 #include <QuickLook/QuickLook.h>
 #import <mach-o/loader.h>
 #import <mach-o/fat.h>
+#import "Utils.h"
 #define ErrHandle();       if (err != nil) {\
 [Output appendFormat:@"%@\n",err.localizedDescription];\
 [Output appendFormat:@"%@\n",err.localizedFailureReason];\
@@ -121,15 +122,80 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         //Now do actual processing
         for(MKMachOImage* Image in Slides){
             [Output appendFormat:@"# %@-%s  \n",Image.name,cpu_type_name(Image.header.cputype)];
-            [Output appendFormat:@"**Magic**:      0x%08x  \n",Image.header.magic];
-            [Output appendFormat:@"**CPUSubType**: 0x%08x  \n",Image.header.cpusubtype];
+            [Output appendFormat:@"**Magic**:                   0x%08x  \n",Image.header.magic];
+            [Output appendFormat:@"**CPUSubType**:              0x%08x  \n",Image.header.cpusubtype];
+            [Output appendFormat:@"**Flags**:                   0x%08d  \n",Image.header.flags];
+            if(Image.header.flags & MH_PIE){
+                [Output appendFormat:@"<font color=\"red\">ASLR: ON</font>  \n"];
+            }
+            else{
+                [Output appendFormat:@"<font color=\"red\">ASLR: OFF</font>  \n"];
+            }
+            if(Image.header.flags & MH_ROOT_SAFE){
+                [Output appendFormat:@"<font color=\"red\">SafeForRoot: YES</font>  \n"];
+            }
+            else{
+                [Output appendFormat:@"<font color=\"red\">SafeForRoot: NO</font>  \n"];
+            }
+            [Output appendFormat:@"**Number of Load Commands**: 0x%08lx  \n",Image.loadCommands.count];
+            
             for(MKLoadCommand* LC in Image.loadCommands){
                 switch (LC.cmd) {
                         //TODO: Fix this up
                     case LC_UUID:
-                        [Output appendFormat:@"**UUID**:     %@  \n",[(MKLCUUID*)LC uuid].UUIDString];
+                        [Output appendFormat:@"## **UUID**:                  %@  \n",[(MKLCUUID*)LC uuid].UUIDString];
                         break;
+                    case LC_ENCRYPTION_INFO_64:
                         
+                        [Output appendFormat:@"## EncryptionInfo  \n"];
+                        [Output appendFormat:@"**CryptSize** %d  \n",[(MKLCEncryptionInfo64*)LC cryptsize]];
+                        [Output appendFormat:@"**CryptOffset** %d  \n",[(MKLCEncryptionInfo64*)LC cryptoff]];
+                        if([(MKLCEncryptionInfo64*)LC cryptid]==0){
+                            [Output appendFormat:@"<font color=\"red\">Encrypted: NO</font>  \n"];
+                        }
+                        else{
+                            [Output appendFormat:@"<font color=\"red\">Encrypted: YES</font>  \n"];
+                        }
+                        break;
+                    case LC_ENCRYPTION_INFO:
+                        
+                        [Output appendFormat:@"## EncryptionInfo  \n"];
+                        [Output appendFormat:@"**CryptSize** %d  \n",[(MKLCEncryptionInfo*)LC cryptsize]];
+                        [Output appendFormat:@"**CryptOffset** %d  \n",[(MKLCEncryptionInfo*)LC cryptoff]];
+                        if([(MKLCEncryptionInfo*)LC cryptid]==0){
+                            [Output appendFormat:@"<font color=\"red\">Encrypted: NO</font>  \n"];
+                        }
+                        else{
+                            [Output appendFormat:@"<font color=\"red\">Encrypted: YES</font>  \n"];
+                        }
+                        break;
+                    case LC_MAIN:
+                        [Output appendString:@"## MAIN  \n"];
+                        [Output appendFormat:@"**Main Entry Offset**:     %llu  \n",[(MKLCMain*)LC entryoff]];
+                        [Output appendFormat:@"**Stack Size**:               %llu  \n",[(MKLCMain*)LC stacksize]];
+                        break;
+                    case LC_SEGMENT:
+                        [Output appendFormat:@"## **Segment Name**           %@  \n",[(MKLCSegment*)LC segname]];
+                        [Output appendFormat:@"**VM Address**             %d  \n",[(MKLCSegment*)LC vmaddr]];
+                        [Output appendFormat:@"**VM Size**                %d  \n",[(MKLCSegment*)LC vmsize]];
+                        [Output appendFormat:@"**File Offset**            %d  \n",[(MKLCSegment*)LC fileoff]];
+                        [Output appendFormat:@"**File Size**              %d  \n",[(MKLCSegment*)LC filesize]];
+                        [Output appendFormat:@"**Maximum VM Protect**     %@  \n",VMProtectionString([(MKLCSegment*)LC maxprot])];
+                        [Output appendFormat:@"**Initial VM Protect**     %@ \n",VMProtectionString([(MKLCSegment*)LC initprot])];
+                        [Output appendFormat:@"**Number of Sections**     %d  \n",[(MKLCSegment*)LC nsects]];
+                        [Output appendFormat:@"**Flags**                  %d  \n",[(MKLCSegment*)LC flags]];
+                        break;
+                    case LC_SEGMENT_64:
+                        [Output appendFormat:@"## **Segment Name**           %@  \n",[(MKLCSegment64*)LC segname]];
+                        [Output appendFormat:@"**VM Address**             %llu  \n",[(MKLCSegment64*)LC vmaddr]];
+                        [Output appendFormat:@"**VM Size**                %llu  \n",[(MKLCSegment64*)LC vmsize]];
+                        [Output appendFormat:@"**File Offset**            %llu  \n",[(MKLCSegment64*)LC fileoff]];
+                        [Output appendFormat:@"**File Size**              %llu  \n",[(MKLCSegment64*)LC filesize]];
+                        [Output appendFormat:@"**Maximum VM Protect**     %@  \n",VMProtectionString([(MKLCSegment*)LC maxprot])];
+                        [Output appendFormat:@"**Initial VM Protect**     %@ \n",VMProtectionString([(MKLCSegment*)LC initprot])];
+                        [Output appendFormat:@"**Number of Sections**     %d  \n",[(MKLCSegment64*)LC nsects]];
+                        [Output appendFormat:@"**Flags**                  %d  \n",[(MKLCSegment64*)LC flags]];
+                        break;
                     default:
                         break;
                 }
